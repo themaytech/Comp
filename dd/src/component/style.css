@@ -1,0 +1,98 @@
+body{
+    background-color: antiquewhite;
+}
+.container{
+    width: 100%;
+}
+.drag{
+    margin-top: 20px;
+    display: grid;
+    padding: 5px;;
+    place-items: end center;
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 300px;
+    margin-bottom: 2px;
+    border: 3px dashed rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.file{
+    display: grid;
+    place-items: center;
+
+}
+.uploaded {
+    width: 40%;
+    display: flex;
+    padding: 2px;
+    flex-direction: column;
+    align-items: end;
+    max-height: 350px; /* Set a maximum height for the list */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+.scrollable-list {
+        max-height: 900px; /* Set a maximum height for the list */
+        overflow-y: auto; /* Enable vertical scrolling */
+    }
+.scrollable-list::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+}
+
+.card_upload {
+    background-color: rgba(240, 248, 255, 0.555);
+    border-radius: 5px;
+    display: inline-block; /* Ensures cards are laid out horizontally */
+    width: 100%;
+    display: flex;
+    border: 1px solid black;
+    margin-bottom: 1px;
+    justify-content: space-between;
+}
+.detail{
+    padding: 0px 5px;
+}
+progress {
+    width: 100%;
+    height: 20px;
+}
+
+.card_upload img{
+    width: 30px;
+}
+.del{
+    padding: 5px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+@media only screen and (max-width: 600px){
+    .uploaded {
+        text-align: center;
+        width: 80%;
+        display: flex;
+        padding: 1px;
+        flex-direction: column;
+        align-items: center;
+        max-height: 350px; /* Set a maximum height for the list */
+        overflow-y: auto; /* Enable vertical scrolling */
+        overflow-x: hidden;
+    }
+    .drag{
+        margin-top: 20px;
+        display: grid;
+        place-items: end center;
+        width: 80%;
+        border: 1px solid black;
+        border-radius: 5px;
+        height: 300px;
+        margin-bottom: 2px;
+        border: 3px dashed black;
+    }
+    .card_upload img{
+        width: 25px;
+    }
+}
